@@ -1,0 +1,61 @@
+{
+    "exclude": [
+        "webpack.config.js",
+        "webpack.config.js",
+        "./dist",
+        "./node_modules/"
+    ],
+    "compilerOptions": {
+        // "incremental": true,
+        "target": "ES5",
+        "module": "CommonJS",
+        "lib": [
+            "DOM",
+            "ES2020"
+        ],
+        "allowJs": true,
+        // "checkJs": true,
+        "jsx": "react",
+        // "declaration": false,
+        "sourceMap": false,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        // "composite": true,
+        "removeComments": true,
+        // "importHelpers": true,
+        "downlevelIteration": true,
+        // "noUnusedLocals": true,
+        // "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        // "typeRoots": [],
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        // "emitDecoratorMetadata": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitAny": true,
+        // "strictNullChecks": true,
+        // "strictFunctionTypes": true,
+        // "strictBindCallApply": true,
+        // "strictPropertyInitialization": true,
+        // "noImplicitThis": true,
+        // "alwaysStrict": true
+
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@components/*": [
+                "src/components/*"
+            ],
+            "@modules/*": [
+                "src/modules/*"
+            ],
+            "@assets/*": [
+                "src/assets/*"
+            ]
+        }
+    }
+}

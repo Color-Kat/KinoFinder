@@ -1,0 +1,211 @@
+.page-cinema {
+    position: relative;
+    width: 100%;
+
+    .film-description-wrapper {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        padding-bottom: 15px;
+        margin-top: 15px;
+
+        .film-description {
+            position: relative;
+            width: 68%;
+            padding-right: 30px;
+
+            .film-overview {
+                position: relative;
+                width: 100%;
+                color: #fff;
+                font-size: 20px;
+
+                @media screen and (max-width: 480px) {
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    font-size: 16px;
+                }
+            }
+
+            .film-title {
+                width: 100%;
+                font-size: 26px;
+                color: var(--orange);
+                font-weight: 600;
+                letter-spacing: 1px;
+                display: flex;
+                align-items: center;
+                margin: 0 !important;
+                margin-bottom: 30px !important;
+            }
+        }
+
+        img.film-poster-desktop {
+            position: relative;
+            width: 32%;
+        }
+
+        img.film-poster-mobile {
+            display: none;
+        }
+
+        border-bottom: 2px solid var(--orange);
+    }
+
+    .filmInfo {
+        position: relative;
+        width: 100%;
+        min-height: 70px;
+        border-bottom: 2px solid var(--orange);
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0 20px;
+
+        @media screen and (max-width: 960px) {
+            flex-wrap: wrap-reverse;
+            padding: 0;
+        }
+
+        div {
+            color: #fff;
+            font-size: 27px;
+            display: flex;
+            align-items: center;
+            font-family: Orbitron;
+            transition: all .5s ease-in;
+            margin: 10px 30px;
+
+            &.active[class*="icon-"],
+            [class*="icon-"] {
+                font-size: 37px;
+                color: var(--orange);
+                margin: 3px;
+            }
+
+            &.notActive [class*="icon-"] {
+                font-size: 31px;
+                color: white;
+                margin: 3px;
+            }
+
+            @media screen and (max-width: 420px) {
+                font-size: 22px;
+
+                &.active[class*="icon-"],
+                [class*="icon-"] {
+                    font-size: 32px;
+                    color: var(--orange);
+                    margin: 3px;
+                }
+
+                &.notActive [class*="icon-"] {
+                    font-size: 26px;
+                    color: white;
+                    margin: 3px;
+                }
+            }
+        }
+    }
+
+    .film-player-wrapper {
+        position: relative;
+        width: 100%;
+        // aspect ratio 16:9
+        padding-bottom: 56.25%;
+        margin-bottom: 40px;
+
+        .film-player {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .film-description-wrapper {
+            display: flex;
+            flex-wrap: wrap-reverse;
+
+            .film-description {
+                position: relative;
+                width: 100%;
+                padding-right: 0;
+
+                .film-overview {
+                    width: 100%;
+                }
+
+                .film-title {
+                    width: 100%;
+                }
+            }
+
+            img.film-poster-desktop {
+                display: none;
+            }
+
+            img.film-poster-mobile {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+
+
+
+
+
+        // ----------------
+        // img.film-poster-desktop {
+        //     display: none;
+        // }
+
+        // img.film-poster-mobile {
+        //     display: block;
+        // }
+
+        // .film-description {
+        //     position: relative;
+        //     width: 100%;
+        //     color: #fff;
+        //     font-size: 20px;
+        //     height: 200px;
+        // }
+
+        // .film-title {
+        //     width: 100%;
+        //     height: 40px;
+        //     font-size: 24px;
+        //     color: var(--orange);
+        //     font-weight: 600;
+        //     letter-spacing: 1px;
+        //     display: flex;
+        //     align-items: center;
+        //     margin: 20px 0;
+        // }
+
+        // .film-player-wrapper {
+        //     position: relative;
+        //     width: 100%;
+        //     // aspect ratio 16:9
+        //     padding-bottom: 56.25%;
+
+        //     .film-player {
+        //         position: absolute;
+        //         left: 0;
+        //         top: 0;
+        //         right: 0;
+        //         bottom: 0;
+        //     }
+        // }
+    }
+}

@@ -1,0 +1,12 @@
+.profile {
+	position: relative;
+	width: 100%;
+	height: calc(100vh - var(--header_h));
+
+	.exit-btn {
+		margin-top: 30px;
+		position: relative;
+		left: 100%;
+		transform: translateX(-100%);
+	}
+}
